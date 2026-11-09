@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery | Liam Benge</title>
+<meta name="description" content="Photos and video from lighting and technical productions by Liam Benge.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="gallery">
+<header class="site-header">
+  <a class="brand" href="index.html">LIAM BENGE</a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+</header>
+<div class="scrim" id="scrim" hidden></div>
+<nav class="drawer" id="drawer" aria-label="Main">
+  <a href="index.html" data-nav="home">Home</a>
+  <p class="drawer-label">Photos and video</p>
+  <div id="folderLinks"></div>
+  <a href="contact.html" data-nav="contact" style="margin-top:12px">Contact</a>
+</nav>
+
+<main>
+<header class="page-head">
+  <h1 id="galTitle">Gallery</h1>
+  <p class="count" id="galCount"></p>
+  <div class="gal-bar" id="galViews">
+    <div class="seg" role="group" aria-label="View">
+      <button id="viewSlides" aria-pressed="true">Slideshow</button>
+      <button id="viewGrid" aria-pressed="false">Grid</button>
+    </div>
+  </div>
+</header>
+<div class="gallery" id="gallery">
+  <p class="notice" id="galEmpty" hidden>This folder is empty. Add photos or videos to <code id="galEmptyPath"></code> and push to GitHub: they will appear here automatically.</p>
+  <section id="slides" aria-label="Slideshow">
+    <div class="stage" id="stage">
+      <div id="stageMedia" style="width:100%;height:100%"></div>
+      <button class="nav-btn prev" id="prev" aria-label="Previous">&#8249;</button>
+      <button class="nav-btn next" id="next" aria-label="Next">&#8250;</button>
+      <button class="fs-btn" id="fs" aria-label="Full screen">&#9974;</button>
+      <span class="counter" id="counter" aria-live="polite"></span>
+    </div>
+    <div class="thumbs" id="thumbs"></div>
+  </section>
+  <section id="gridWrap" aria-label="Grid" hidden>
+    <div class="grid" id="grid"></div>
+  </section>
+</div>
+</main>
+<footer class="site-footer">
+  <span>&copy; Liam Benge</span>
+  <a href="contact.html">Get in touch</a>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>

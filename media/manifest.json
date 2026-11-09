@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "slug": "01-rockit-productions",
+      "title": "Rockit Productions",
+      "items": []
+    },
+    {
+      "slug": "02-sheldon-college",
+      "title": "Sheldon College",
+      "items": []
+    },
+    {
+      "slug": "03-general-maintenance",
+      "title": "General Maintenance",
+      "items": []
+    }
+  ]
+}

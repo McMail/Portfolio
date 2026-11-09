@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Liam Benge</title>
+<meta name="description" content="Get in touch with Liam Benge about lighting design, operation and technical production.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+<header class="site-header">
+  <a class="brand" href="index.html">LIAM BENGE</a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+</header>
+<div class="scrim" id="scrim" hidden></div>
+<nav class="drawer" id="drawer" aria-label="Main">
+  <a href="index.html" data-nav="home">Home</a>
+  <p class="drawer-label">Photos and video</p>
+  <div id="folderLinks"></div>
+  <a href="contact.html" data-nav="contact" style="margin-top:12px">Contact</a>
+</nav>
+
+<main>
+<header class="page-head">
+  <h1>Contact</h1>
+  <p class="count">Available for lighting design, operation and technical production work.</p>
+</header>
+<section class="section" style="border-top:0">
+  <div class="wrap split">
+    <div class="prose">
+      <p>Email: <a href="mailto:bengeliam@gmail.com">bengeliam@gmail.com</a></p>
+      <p>Or send a message with the form.</p>
+    </div>
+    <!-- Replace YOUR_FORM_ID with the ID from your free Formspree form (see README). -->
+    <form class="form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <label>Name <input type="text" name="name" required autocomplete="name"></label>
+      <label>Email <input type="email" name="email" required autocomplete="email"></label>
+      <label>Message <textarea name="message" required></textarea></label>
+      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div><button class="btn solid" type="submit">Send message</button></div>
+      <p class="status" id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <span>&copy; Liam Benge</span>
+  <a href="contact.html">Get in touch</a>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>
